@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html" charset="ISO-8859-1">
+		<meta name="description" content="Proyecto aplicaciones multimedia">
+		<meta name="author" content="Álvaro, Edel, Jorge, Natalie">
+		<meta name="keywords" content="HTML, CSS, Javascript">
+		<title>Fish Frenzy</title>
+		<link rel="shortcut icon" href="imagenes_juego/fish1.gif">
+		<link rel="stylesheet" type="text/css" href="css_reset.css">
+		<link rel="stylesheet" type="text/css" href="juegoestilo.css">
+	</head>
+	<body class="mode_normal">
+		<header>
+			<div id="top_title" class="center">
+				<img id="title_img" src="imagenes_juego/titulo_pez.png">
+				<img id="mute_icon" src="imagenes_juego/mute.png">
+				<img id="speaker_icon" src="imagenes_juego/speaker.png">
+				<img id="musicOff_icon" src="imagenes_juego/Music-Note-mute.png">
+				<img id="musicOn_icon" src="imagenes_juego/Music-Note.png">
+				<img id="return_icon" src="imagenes_juego/returnbutton.png">
+			</div>		
+		</header>
+		<div id="middle">
+			<nav id="aside_nav">
+				<ul id="list1">
+					<li class="nav_list" id="tab1">Juego</li>
+					<li class="nav_list" id="tab2">Tutorial</li>
+					<li class="nav_list" id="tab3">Ranking</li>
+					<li class="nav_list" id="tab4">Nosotros</li>
+				</ul>
+			</nav>
+			<section id="game" class="show">
+				<img id="playbutton" class="playbutton" src="imagenes_juego/playbutton.png">	
+				<img id="choosefish" class="choosefish" src="imagenes_juego/choosefish.png">
+            	<img id="chooseback" class="chooseback" src="imagenes_juego/chooseback.png">
+            	<img id="choosedifficulty" class="choosedifficulty" src="imagenes_juego/dificultad.png">
+            	<img id="fish1" class="hide" src="imagenes_juego/dblue_fish_128px.png">	
+            	<img id="fish2" class="hide" src="imagenes_juego/dgreen_fish_128px.png">
+				<img id="fish3" class="hide" src="imagenes_juego/dyellow_fish_128px.png">
+				<img id="easy" class="hide" src="imagenes_juego/facil.png">
+				<img id="moderate" class="hide" src="imagenes_juego/moderado.png">
+				<img id="hard" class="hide" src="imagenes_juego/dificil.png">
+				<img id="menubutton" class="hide" src="imagenes_juego/menu.png">
+				<img id="backselect1" class="hide" src="imagenes_juego/backselect1.jpg">
+				<img id="backselect2" class="hide" src="imagenes_juego/backselect2.jpg">
+				<img id="backselect3" class="hide" src="imagenes_juego/backselect3.jpg">
+				<img id="backselect4" class="hide" src="imagenes_juego/backselect4.jpg">
+				<div id="welcomevid">
+					<video id= "welcome" width="600" height="400" loop="loop" autoplay="autoplay" >
+						<source src="videos_juego/welcomevid.mp4" type="video/mp4" />
+					</video>
+				</div>
+				<div id="shark-div"class="hide">
+					<video id="shark-vid" >
+						<source src="videos_juego/shark.mp4" type="video/mp4" />
+					</video>
+					<p id="question" class="hide"></p>
+					<p id="answers" class="hide"></p>
+					<audio id = "q_sounds" autoplay="false" loop="false"> </audio>
+				</div>
+				<audio id="backsound" loop="loop">
+					<source src="sonidos_juego/gamemusic.mp3" type="audio/mpeg" />
+				</audio>
+			</section>
+			<section id="tutorial" class="hide">
+				<article>
+				<h1> Instrucciones </h1>
+				<p> <br>Muévete por el océano en busca de alimento. <br>
+						Otros peces irán apareciendo y tendrás que <br>
+						comértelos para ir engordando, pero cuidado,<br>
+						esquiva a los grandes o ellos te comerán a ti!
+				</p>
+				<img id="tutorial_img" src="imagenes_juego/controles.png">
+				</article>
+			</section>
+			<section id="ranking" class="hide">
+				<table class="rank" cellspacing="50">		
+					<tr class="rank">			
+						<th  iclass="rank" font style="color: #FFFFFF;">USUARIO</th>			
+			  			<th class="rank" font style="color: #FFFFFF;">PUNTUACIÓN</th>		
+			   		</tr>
+
+					<tr class="rank">
+			  			<td id="primeraN"></td>
+			  			<td id="primeraS"> </td>				  	
+			    	</tr>
+					<tr class="rank">
+			  			<td id="segundaN"></td>	
+			    		<td id="segundaS"></td>		
+					</tr>
+					<tr class="rank">
+			  			<td id="terceraN"></td>
+			  			<td id="terceraS"></td>		
+					</tr>
+				</table>
+			</section>
+			<section id="nosotros" class="hide" style=" height: 400px; width: auto;">
+				<ul>
+					<li class="about-us-id" id="Alvaro"><br>Álvaro de Frutos</li>
+					<li class="about-us-id" id="Edel"><br>Edel Pérez</li>			
+					<li class="about-us-id" id="Jorge"><br>Jorge Romero</li>
+					<li class="about-us-id" id="Natalie"><br>Natalie Sotomayor</li>
+					<p class="about-us-text">Estudiante GISA en UCIIIM</p>	
+					<p class="about-us-text">Estudiante GISA en UCIIIM</p>
+					<p class="about-us-text">Estudiante GISA en UCIIIM</p>
+					<p class="about-us-text">Estudiante GISA en UCIIIM</p>
+				</ul>				
+			</section>
+		</div>
+		<footer id="bottom">
+			<div id="bottom_footer">
+				<div id="bottom_img">
+					<img id="footer_img" src="imagenes_juego/cc.png">
+				</div>
+				<div id="bottom_text">
+					<p> Los contenidos de esta web están bajo una licencia
+					<a href="http://es.creativecommons.org/blog/">	
+					Creative Commons</a> si no se indica lo contrario.
+					© 2014 Fish Games UCIIIM Group.<br>
+					Para descargar una lista de las referencias pulsa
+					<a id="references" class="center" href="referencias.txt">aquí</a>
+					</p>		
+				</div>		
+			</div>
+		</footer>	
+		<script type="text/javascript" src="juegoscript.js"></script>
+	</body>
+</html>

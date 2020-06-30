@@ -1,0 +1,444 @@
+/******************** CSS main style sheet: juegoestilo.css ********************/
+
+/******************** Class styles: ********************/
+
+.about-us-id {
+	border-radius: 5px;
+	color: #fff;
+	display: inline-block;
+	font-size: 1.3em;
+	height: 400px;
+	padding: 0px;
+	text-align: center;	
+	vertical-align: 70%;
+	width: 212px;
+}
+
+.about-us-id:hover {
+	box-shadow: 0px 0px 20px 0px #FFFFFF;
+	font-style: italic;
+}
+
+.about-us-text {
+	background-color: rgba(10,20,20,0.6);
+	color: rgba(255,255,255,0.8);
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: 0.9em;
+	height: 20px;
+	position: relative;
+	text-align: center;	
+	top: -150px;
+	width: 212px;
+}
+
+.center {
+	margin: 0px auto 0px auto;	
+}
+
+.hide {
+	display: none;
+}
+
+.mode_cinema {
+	background-color: #000000;
+	background-image: none;	
+	transition: all 2s ease-in-out;
+}
+
+.mode_normal {
+	background-color: #FFFFFF;
+	transition: all 0.5s ease-in-out;
+}
+
+.show {
+	display: block;
+}
+
+/******************** <body> ********************/
+
+/* Body */
+body {
+	background-image: url('imagenes_juego/pageback1.jpg');
+	background-size: cover;
+	height: 100%;
+	min-height: 900px;
+	overflow: auto;
+	width: 100%;
+}
+
+/******************** <header> ********************/
+
+/* Header */
+header { 
+
+}
+
+/******************** <div> ********************/
+
+/* Division: Block image container */
+div#top_title {
+	width: 650px;
+}
+
+/* Image: Tittle */
+img#title_img {
+	height: 200px;
+}
+
+img#mute_icon, img#speaker_icon {
+	cursor: pointer;
+	float: right;
+	height: 30px;
+	margin-left: 140px;
+	margin-top: 200px;
+	position: absolute;
+	width: 30px;
+}
+
+img#speaker_icon {
+	display: none;
+}
+
+img#musicOn_icon, img#musicOff_icon {
+	cursor: pointer;
+	float: right;
+	height: 28px;
+	margin-left: 170px;
+	margin-top: 200px;
+	position: absolute;
+	width: 28px;
+}
+
+img#return_icon {
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	margin-left: 110px;
+	margin-top: 200px;
+	cursor: pointer;
+	float: right;
+	display: none;
+}
+
+
+/******************** <div> ********************/
+
+/* Division: Main container */
+div#middle {
+	margin: 30px auto 0px auto;
+	width: 1280px;
+}
+
+/******************** <nav> ********************/
+
+/* Navigation bar */
+nav {
+	position: absolute;
+}
+
+/******************** <ul> ********************/
+
+/* List elements */
+li.nav_list {
+	background: linear-gradient(to bottom right, white , blue);
+	border-radius: 5px;
+	color: #400000;
+	cursor: pointer;
+	font-size: 175%;
+	list-style-type: none;
+	margin: 10px 0px 40px 0px;
+	padding: 20px 25px 20px 25px; 
+	text-align: center;	
+	transition: all 0.5s ease-in-out; 
+}
+
+/* List behaviour */
+li.nav_list:hover, li.nav_list:focus {
+	background-size: 151px 113px;
+	box-shadow: 0px 0px 20px 0px #FFFFFF;
+	color: #000000;
+}
+
+li#tab1:hover, li#tab1:focus {
+	background-image: url('imagenes_juego/bubbles.gif');
+}
+
+li#tab2:hover, li#tab2:focus {
+	background-image: url('imagenes_juego/bubbles2.gif');
+}
+
+li#tab3:hover, li#tab3:focus {
+	background-image: url('imagenes_juego/bubbles3.gif');
+}
+
+li#tab4:hover, li#tab4:focus {
+	background-image: url('imagenes_juego/bubbles4.gif');
+}
+
+/******************** <section> ********************/
+
+/* Sections */
+section {
+	box-shadow: 0px 0px 20px 0px #FFFFFF;
+	color: white;
+	margin: 0px 200px 0px 200px;
+	min-height: 400px;	
+	padding: 10px;	
+}
+
+/******************** 1. Game ********************/
+
+section#game {
+	box-shadow: none;
+}
+
+/* Canvas */
+canvas {
+	border-radius: 20px;
+	border-style: groove;
+	margin: 0px 140px 0px 140px;
+}
+
+/******************** <div> ********************/
+
+div#shark-div {
+	border-radius: 20px;
+    border-style: groove;
+    font-family: helvetica;
+    height: 500px;
+    margin: 0px 140px 0px 140px;
+    position: relative;
+	width: 800px;
+}
+
+video#shark-vid {
+	height: 100%;
+	overflow: hidden;
+	z-index: 2;
+}
+
+p#question {
+	background-color: rgba(0, 0,0,.6);
+	color: white;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-left: 50px;
+	margin-top: -290px;
+    max-width: 600px;
+    position: absolute;
+	z-index: 3;	
+}
+
+p#answers {
+	background-color: rgba(0, 0,0,.6);
+	color: white;
+	font-size: 1.2em;
+	margin-left: 60px;
+	margin-top: -200px;
+	max-width: 600px;
+    position: absolute;
+	z-index: 3;	
+}
+
+.playbutton {
+	cursor: pointer;
+	margin-left: 390px;
+	margin-top: 90px;;
+	position: absolute;
+	z-index: 10; 
+}
+
+.choosefish {
+	cursor: pointer;
+	margin-left: 372px;
+	margin-top: 150px;
+	position: absolute;
+	z-index: 10; 
+}
+
+.chooseback {
+	cursor: pointer;
+	margin-left: 368px;
+	margin-top: 210px;
+	position: absolute;
+	z-index: 10; 
+}
+
+.choosedifficulty{
+	cursor: pointer;
+	margin-left: 380px;
+	margin-top: 270px;
+	position: absolute;
+	z-index: 10; 
+}
+
+div#welcomevid {
+	border-radius: 20px;
+	border-style: groove;
+	margin: 0px 140px 0px 140px;
+	position: relative;
+	z-index: -1;
+}
+
+.fishchoice {
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	z-index: 10;
+}
+
+.backchoice{
+	border-radius: 80px;
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	z-index: 10;	
+}
+
+.diffchoice{
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	z-index: 10;
+}
+
+.menubutton{
+	cursor: pointer;
+	margin-left: 660px;
+	margin-top: 330px;
+	position: absolute;
+	z-index: 10; 
+}
+
+/******************** 2. Tutorial ********************/
+
+/* New tool for animated CSS3 */
+@-webkit-keyframes tutorial_animation {
+	0%   {background: #FFFFFF;}
+	20%  {background: #0000FF;}
+	40%  {background: #800080;}
+	60%  {background: #FF0000;}
+	80%  {background: #FFFF00;}
+	100% {background: #FFFFFF;}
+}
+
+section#tutorial {
+	background: rgba(255,255,255,0.4);
+	border-radius: 20px;	
+	-webkit-animation: tutorial_animation 60s infinite;
+}
+
+article {
+	color: #000000;
+	font-family: "Lucida sans";
+	font-size: 1.5em; 
+	text-align: center;
+}
+
+@-webkit-keyframes h1_animation {
+	0%   {left: -300px;}
+	100% {left: 300px;}
+}
+
+h1 {
+	border-style: groove;
+	color: #00FF00;
+	font: "Century Schoolbook", Georgia, Times, serif;
+	font-family: Helvetica;
+	font-size: 2em;
+	letter-spacing: -1.5px;
+	position:relative;
+	text-shadow: 5px 5px 10px #000000;
+	-webkit-animation: h1_animation 20s infinite alternate; /* Infinite animation */
+}
+
+img#tutorial_img {
+	width: 600px;
+}
+
+/******************** 3. Ranking ********************/
+
+section#ranking {
+	background-image: url('imagenes_juego/arena.jpg');
+	background-size: 900px auto;	
+}
+
+/* Table*/
+table.rank {
+	font-family: "lucida console";
+	font-size: 25px;	
+	height: 400px; 
+    width: 600px;
+}
+
+/* Table standard cells */
+table.rank td {
+	border: solid #000 0px;
+	margin-top: 100px;
+    padding: 5px;  
+    text-align: center;
+}
+
+/* Table header cells */
+table.rank th {
+	font-family: "lucida console";
+	font-size: 40px;
+	margin-top: 100px;
+	text-align: center;
+	top: 50%;
+}
+
+/******************** 4. Nosotros ********************/
+
+li#Alvaro {
+	background-image: url('imagenes_juego/koke.jpg');
+	background-size: 212px 400px;
+}
+
+li#Edel {
+	background-image: url('imagenes_juego/edel.jpg');
+	background-size: 212px 400px;
+}
+
+li#Jorge {
+	background-image: url('imagenes_juego/jorge.jpg');	
+	background-size: 212px 400px;
+}
+
+li#Natalie {
+	background-image: url('imagenes_juego/natalie.jpg');
+	background-size: 212px 400px;
+}
+
+/******************** <footer> ********************/
+
+/* Division: Footer container*/
+footer#bottom {
+	margin: 30px auto 0px auto;
+	width: 1280px;
+}
+
+/******************** <div> ********************/
+
+/* Footer */
+div#bottom_footer {
+	font-weight: bold;
+}
+
+/* Image: Footer */
+img#footer_img {
+	float: left;
+	margin-right: 250px;
+	width: 100px;
+}
+
+/******************** <div> ********************/
+
+/* Table: Bottom table */
+div#bottom_text {
+	background: rgba(255,255,255,0.5);
+	border-radius: 5px;
+	float: left;
+	margin-left: -100px;
+}

@@ -1,0 +1,56 @@
+---HTML5, CSS & Javascript documentation---
+
+Useful information:	http://www.w3schools.com/
+
+---CSS documentation---
+
+Optimize CSS: 		http://jigsaw.w3.org/css-validator/
+
+CSS style guide:	http://coding.smashingmagazine.com/2007/05/10/70-expert-ideas-for-better-css-coding/
+
+CSS useful examples: 	http://css3please.com/
+
+---Canvas Backgrounds---
+
+canvasback1  		http://wall.alphacoders.com/ user: Jochi
+		
+canvasback2 		http://wall.alphacoders.com/ user: Jochi
+
+canvasback3 		http://wall.alphacoders.com/ user: Jochi
+
+canvasback4 		http://wall.alphacoders.com/ user: Jochi
+
+---Canvas documentation---
+
+HTML5 Canvas: 		http://chimera.labs.oreilly.com/books/1234000001654/index.html
+
+---Page Backgrounds---
+
+Pageback1   		http://wall.alphacoders.com/ user: darkness
+
+pageback2    		http://wall.alphacoders.com/ user: Hellica
+
+pageback3    		http://wall.alphacoders.com/ user: TorinoGT
+
+pageback4   		http://wall.alphacoders.com/ user: darkness
+
+---Fish Images---
+
+Fish 			http://www.iconarchive.com/artist/fasticon.html
+
+---Question & answers game---
+
+Shark Video: 		http://www.youtube.com/watch?v=RYXmkb65QF0
+
+Fail sound effects: 	http://www.soundjay.com/failure-sound-effect.html http://soundbible.com/free-sound-effects-1.html
+
+Win sound effects: 	http://soundbible.com/free-sound-effects-1.html
+
+---Proyect presentation & Style---
+
+JsDoc style:		http://usejsdoc.org/
+
+---Books---
+
+El gran libro de HTML5, CSS3 y Javascrip - Juan Diego Gauchat
+
